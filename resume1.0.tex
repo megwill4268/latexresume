@@ -1,0 +1,241 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+\usepackage{multicol}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\ResumeAuthor}{Megan Will}
+\newcommand{\ResumeTitle}{Megan Will's Resume}
+\newcommand{\ResumeNote}{Resume compiled on {\today}}
+\newcommand{\ResumeWebpage}{https://github.com/megwill4268}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\ResumeTitle},
+pdfauthor={\ResumeAuthor},
+pdfsubject={\ResumeWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\ResumeAuthor}
+\begin{SubTitle}
+\href{mailto:megan.will88@gmail.com}{megan.will88@gmail.com}
+https://github.com/megwill4268
+\,\SubBulletSymbol\,
++1\,(512)\,626-4315
+\end{SubTitle}
+\begin{Body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Pertinent Experience   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Pertinent Experience}
+{Pertinent Experience}
+{PDF:Pertinent Experience}
+
+\Entry
+\href{http://www.utexas.edu/}
+{\textbf{University of Texas at Austin}},
+ITS Apps Middleware Team 
+
+\Gap
+\BulletItem
+Software Engineer
+\hfill
+\DatestampYM{2016}{08} -- Current
+\begin{Detail}
+\SubBulletItem
+Technical lead for Central UT Stonebranch Workload Automation and Central UT Message Broker (RabbitMQ), Co-Technical lead for Urgent Email  (Duties: Assessing service state, keeing upgraded and secure, providing user support and consultations)
+\SubBulletItem
+Ported Puppet app configuration management scripts to Ansible for Message Broker to streamline upgrades and maintenance. 
+\SubBulletItem
+Added an extension to the university's custom Python/Dango web platform to allow for custom worker deployment and integration with Message Broker. (Python, Systemd, Heroku style procfiles)
+\SubBulletItem
+Wrote Java notification feed for employee/student data changes to be brokered by RabbitMQ and consumed by different business areas. 
+\SubBulletItem
+Consulted with UT International office to ensure a robust and secure implementation an aquired Cold Fusion app on Windows.
+\SubBulletItem
+Created a Python package to simplfiy common LDAP queries to the univeristy LDAP directory. 
+\SubBulletItem
+Helped mentor other developers in how to turn SVN externals into packages and use a binary repository in migrating repos from SVN/GIT 
+\end{Detail}
+
+\Gap
+\BulletItem
+Middleware Engineer
+\hfill
+\DatestampYM{2016}{03} --
+\DatestampYM{2016}{08}
+\begin{Detail}
+\SubBulletItem
+Technical Lead implementing central Message Broker offering (RabbitMQ), contributed to Puppet-rabbitmq module, wrote application and server configuration, performed and designed load and stress testing. 
+\SubBulletItem
+Wrote and designed an application to allow users to manage Message Broker permissions for their vhost only (Python Django app with a MYSQL backend, syncing to Message Broker via API, batch deprovisioning, full test suite).
+\SubBulletItem
+Created and presented demo of Message Broker tutorial vm (Ubuntu w/Ansible provisioning) illustrating near real time messaging integrating 4 processes, two Python/Django apps, a Ruby app, and a Jython app.
+\end{Detail}
+
+\Gap
+\BulletItem
+Software Developer 
+\hfill
+\DatestampYM{2016}{02} --
+\DatestampYM{2015}{02}
+\begin{Detail}
+\SubBulletItem
+Created and distrubuited a bundle of Python/Django and other Python libraries for deployment and development on the university's custom Python/Django web platform.
+\SubBulletItem
+Upgraded local development vm and Python bundles from 32bit to 64bit for university's custom Python/Django web platform developers.
+\SubBulletItem
+Wrote bash utility to find number of deployed applications on the custom Python/Django web platform utilizing any given Python library and initiated retirement of unused out of support libraries.
+\end{Detail}
+
+\Gap
+\BulletItem
+Software Developer Trainee
+\hfill
+\DatestampYM{2015}{02} --
+\DatestampYM{2014}{09}
+\begin{Detail}
+\SubBulletItem
+Learned Python, Django, HTML, CSS, Natural, project management and design skills
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%
+%% Beyond  Work %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Beyond Work}
+{Beyond Work}
+{PDF:Beyond Work}
+
+\Entry
+\href{https://djangogirls.org/austin/}
+{\textbf{Django Girls}},
+Austin, TX
+
+\Gap
+\BulletItem
+Coordinator
+\hfill
+\DatestampYM{2016}{08} --
+Current
+\begin{Detail}
+\SubBulletItem
+Organized Django Girls Austin teaching Python tutorials and Python Challenge for The Girl Scouts of Central Texas STEM Hackathon (March 2017). 
+\SubBulletItem
+\href{https://www.gitbook.com/book/megwill4268/learning-python-on-mars/details}{\text{Wrote Python games and co-wrote tutorials for the Hackathon. }}
+\SubBulletItem
+Co-Organized Django Girls Workshop December 3, 2016, providing a free workshop through Rackspace to help women interested in careers in technology get started.
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Other Work\newline
+Experience}
+{Other Work Experience}
+{PDF:OtherWorkExperience}
+
+\Gap
+\BulletItem
+Office Coordinator, Epic Health Services 
+\hfill
+\DatestampYM{2013}{07} --
+\DatestampYM{2014}{08}
+\BulletItem
+Client Service Coordinator, Epic Health Services 
+\hfill
+\DatestampYM{2012}{10} --
+\DatestampYM{2013}{06}
+\BulletItem
+Business Office Specialist I, Health Sense Homecare 
+\hfill
+\DatestampYM{2012}{07} --
+\DatestampYM{2013}{10}
+\BulletItem
+Receptionist, Health Sense Homecare
+\hfill
+\DatestampYM{2012}{04} --
+\DatestampYM{2012}{07}
+\BulletItem
+Front Desk Clerk, Embassy Suites
+\hfill
+\DatestampYM{2011}{07} --
+\DatestampYM{2012}{04}
+
+
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+
+\Entry
+\textbf{Configuration Management:}
+Ansible, Puppet
+\Entry
+\textbf{Operating Systems:}
+Linux (Redhat/ Ubuntu)
+\Entry
+\textbf{Integration Tools:}
+Message Broker, ESB (API management), Workload Automation 
+\Entry
+\textbf{Formal Languages:}
+Java (basic), Python (advanced), Ruby (basic), bash, willing to learn the rest
+\Entry
+\textbf{Basic Utilites:}
+Git/ SVN, Binary repositories, Jmeter, Docker, Virtual Machines/Vagrant
+\end{Body}
+\end{document}
